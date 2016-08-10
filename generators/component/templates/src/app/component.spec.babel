@@ -1,0 +1,7 @@
+import <%- className %> from './<%- name %>.vue';
+
+describe('<%- className %>', () => {
+  it('should be a <%- componentName %>', () => {
+    expect(<%- className %>.name).toEqual('<%- componentName %>');
+  });
+});

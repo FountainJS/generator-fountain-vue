@@ -1,0 +1,59 @@
+{
+  "name": "generator-fountain-vue",
+  "version": "0.6.0",
+  "description": "Yeoman 'fountain' generator to start a webapp with Vue.js",
+  "homepage": "",
+  "repository": "fountainjs/generator-fountain-vue",
+  "author": "The Fountain Team",
+  "contributors": [
+    "Matthieu Lux <matthieu.lux@gmail.com> (http://swiip.github.io/)",
+    "Mehdy Dara <mdara@eleven-labs.com> (http://eleven-labs.com/)",
+    "Micael Mbagira <micael.mbagira@icloud.com> (http://micaelmbagira.github.io)"
+  ],
+  "main": "index.js",
+  "keywords": [
+    "yeoman-generator",
+    "yeoman",
+    "generator",
+    "gulp",
+    "gulpfile",
+    "fountain",
+    "cli",
+    "vue"
+  ],
+  "dependencies": {
+    "fountain-generator": "^0.6.0",
+    "generator-fountain-gulp": "^0.6.0"
+  },
+  "devDependencies": {
+    "ava": "^0.16.0",
+    "babel-eslint": "^6.0.2",
+    "chai": "^3.4.1",
+    "chai-spies": "^0.7.1",
+    "cross-spawn": "^4.0.0",
+    "eslint": "^3.2.2",
+    "eslint-config-xo-space": "^0.12.0",
+    "eslint-plugin-babel": "^3.2.0",
+    "gulp": "gulpjs/gulp#4.0",
+    "gulp-eslint": "^2.0.0",
+    "gulp-exclude-gitignore": "^1.0.0",
+    "gulp-nsp": "^2.4.0",
+    "nyc": "^6.6.1"
+  },
+  "nyc": {
+    "include": [
+      "generators/**/*.js"
+    ],
+    "exclude": [
+      "generators/**/templates/**"
+    ]
+  },
+  "scripts": {
+    "test": "gulp",
+    "prepublish": "gulp prepublish"
+  },
+  "license": "MIT",
+  "eslintConfig": {
+    "extends": "xo-space/esnext"
+  }
+}

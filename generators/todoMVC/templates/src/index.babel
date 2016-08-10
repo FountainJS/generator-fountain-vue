@@ -1,0 +1,32 @@
+import Vue from 'vue';
+import 'todomvc-app-css/index.css';
+
+import App from './app/containers/App.vue';
+import store from './app/store/index';
+<% if (router === 'router') { -%>
+import VueRouter from 'vue-router';
+Vue.use(VueRouter);
+
+const router = new VueRouter({
+  mode: 'history',
+  routes: [
+    {
+      path: '/',
+      components: {
+        default: App
+      }
+    }
+  ]
+});
+<% } -%>
+
+export default new Vue({
+  el: '#root',
+  store,
+<% if (router === 'router') { -%>
+  router,
+  render: h => h('router-view')
+<% } else { -%>
+  render: h => h(App)
+<% } -%>
+});
