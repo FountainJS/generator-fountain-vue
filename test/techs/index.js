@@ -39,7 +39,7 @@ test(`Call this.copyTemplate 14 times`, t => {
   const spy = chai.spy.on(context, 'copyTemplate');
   TestUtils.call(context, 'writing.src', {
     js: 'babel',
-    version: require('../../../package.json').version,
+    version: require('../../package.json').version,
     date: new Date().toString()
   });
   expect(spy).to.have.been.called.exactly(files.length);
