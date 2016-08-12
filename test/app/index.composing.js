@@ -21,6 +21,7 @@ test(`Call this.composeWith twice`, () => {
     framework: context.props.framework,
     modules: context.props.modules,
     js: context.props.js,
+    ci: context.props.ci,
     css: context.props.css,
     router: context.props.router,
     sample: context.props.sample,
