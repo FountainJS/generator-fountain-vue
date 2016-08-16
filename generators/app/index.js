@@ -64,6 +64,7 @@ module.exports = fountain.Base.extend({
       framework: this.props.framework,
       modules: this.props.modules,
       js: this.props.js,
+      ci: this.props.ci,
       css: this.props.css,
       router: this.props.router,
       sample: this.props.sample,
