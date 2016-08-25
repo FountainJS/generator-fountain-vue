@@ -44,7 +44,7 @@ test(`Add 'todomvc-app-css' to package.json dependencies`, () => {
 
 test(`Add 'transform-object-rest-spread' to babelrc`, () => {
   TestUtils.call(context, 'configuring.babel');
-  expect(context.mergeJson['.babelrc'].plugins).to.deep.equal(['transform-object-rest-spread']);
+  expect(context.mergeJson['.babelrc'].env.production.plugins).to.deep.equal(['transform-object-rest-spread']);
 });
 
 test(`Call this.copyTemplate 20 times`, t => {
