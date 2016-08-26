@@ -14,7 +14,7 @@ module.exports = fountain.Base.extend({
     babel() {
       this.mergeJson('.babelrc', {
         env: {
-          dev: {plugins: ['transform-object-rest-spread']},
+          development: {plugins: ['transform-object-rest-spread']},
           production: {plugins: ['transform-object-rest-spread']}
         }
       });
