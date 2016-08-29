@@ -47,13 +47,13 @@ module.exports = fountain.Base.extend({
     this.config.set('props', this.props);
     this.mergeJson('package.json', {
       dependencies: {
-        vue: '^2.0.0-rc.3'
+        vue: '^2.0.0-rc.4'
       }
     });
     if (this.props.router === 'router') {
       this.mergeJson('package.json', {
         dependencies: {
-          'vue-router': '^2.0.0-rc.3'
+          'vue-router': '^2.0.0-rc.4'
         }
       });
     }
