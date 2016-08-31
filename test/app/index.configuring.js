@@ -29,12 +29,12 @@ test('Call this.config.set twice', () => {
 
 test(`Add 'vue' and 'vue-router' to package.json dependencies`, t => {
   TestUtils.call(context, 'configuring', {router: 'router'});
-  t.is(context.mergeJson['package.json'].dependencies.vue, '^2.0.0-rc.3');
-  t.is(context.mergeJson['package.json'].dependencies['vue-router'], '^2.0.0-rc.3');
+  t.is(context.mergeJson['package.json'].dependencies.vue, '^2.0.0-rc.4');
+  t.is(context.mergeJson['package.json'].dependencies['vue-router'], '^2.0.0-rc.4');
 });
 
 test(`Add 'vue' to package.json dependencies`, t => {
   TestUtils.call(context, 'configuring', {router: 'none'});
-  t.is(context.mergeJson['package.json'].dependencies.vue, '^2.0.0-rc.3');
+  t.is(context.mergeJson['package.json'].dependencies.vue, '^2.0.0-rc.4');
   t.is(context.mergeJson['package.json'].dependencies['vue-router'], undefined);
 });
