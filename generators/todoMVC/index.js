@@ -12,12 +12,7 @@ module.exports = fountain.Base.extend({
     },
 
     babel() {
-      this.mergeJson('.babelrc', {
-        env: {
-          development: {plugins: ['transform-object-rest-spread']},
-          production: {plugins: ['transform-object-rest-spread']}
-        }
-      });
+      this.mergeJson('.babelrc', {plugins: ['transform-object-rest-spread']});
     }
   },
 
