@@ -1,6 +1,6 @@
 {
   "name": "generator-fountain-vue",
-  "version": "0.7.2",
+  "version": "1.0.0-rc1",
   "description": "Yeoman Fountain generator to scaffold a webapp with Vue.js written in ES6 (Babel) through Webpack including tools Gulp 4, ESLint, Browsersync and Karma",
   "homepage": "",
   "repository": "fountainjs/generator-fountain-vue",
@@ -22,8 +22,8 @@
     "vue"
   ],
   "dependencies": {
-    "fountain-generator": "^0.7.2",
-    "generator-fountain-gulp": "^0.7.2"
+    "fountain-generator": "^1.0.0-rc1",
+    "generator-fountain-gulp": "^1.0.0-rc1"
   },
   "devDependencies": {
     "ava": "^0.16.0",
