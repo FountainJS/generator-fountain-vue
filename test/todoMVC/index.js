@@ -38,7 +38,7 @@ test.before(() => {
 
 test(`Add 'todomvc-app-css' to package.json dependencies`, () => {
   TestUtils.call(context, 'configuring.pkg');
-  expect(context.mergeJson['package.json'].dependencies.vuex).to.equal('^2.0.0-rc.4');
+  expect(context.mergeJson['package.json'].dependencies.vuex).to.equal('^2.0.0');
   expect(context.mergeJson['package.json'].dependencies['todomvc-app-css']).to.equal('^2.0.4');
 });
 
