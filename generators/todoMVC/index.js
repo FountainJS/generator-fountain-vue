@@ -5,7 +5,7 @@ module.exports = fountain.Base.extend({
     pkg() {
       this.mergeJson('package.json', {
         dependencies: {
-          'vuex': '^2.0.0-rc.4',
+          'vuex': '^2.0.0',
           'todomvc-app-css': '^2.0.4'
         }
       });
