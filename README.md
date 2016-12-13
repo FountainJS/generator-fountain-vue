@@ -45,8 +45,8 @@ More informations in [DESIGN.md](http://fountainjs.io/doc/design).
 
 ## Usage
 
-### Requirement Node 4+ && NPM 3+
-This generator is targeted to be used with Node >= 4.0.0 and NPM => 3.0.0. You can check your version number with the command
+### Requirement Node 6+ && NPM 3+
+This generator is targeted to be used with Node >= 6.0.0 and NPM => 3.0.0. You can check your version number with the command
 ```
 node --version && npm --version
 ```
