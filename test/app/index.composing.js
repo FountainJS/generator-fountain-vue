@@ -29,6 +29,6 @@ test(`Call this.composeWith twice`, () => {
     skipCache: context.props.skipCache
   };
   expect(spy).to.have.been.called.twice();
-  expect(spy).to.have.been.called.with(`fountain-vue:todoMVC`, {options}, {local: require.resolve('../../generators/todoMVC')});
-  expect(spy).to.have.been.called.with(`fountain-gulp`, {options}, {local: require.resolve('generator-fountain-gulp/generators/app')});
+  expect(spy).to.have.been.called.with(require.resolve('../../generators/todoMVC'), options);
+  expect(spy).to.have.been.called.with(require.resolve('generator-fountain-gulp/generators/app'), options);
 });
