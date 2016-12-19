@@ -72,12 +72,8 @@ module.exports = fountain.Base.extend({
       skipCache: this.props.skipCache
     };
 
-    this.composeWith(`fountain-vue:${this.props.sample}`, {options}, {
-      local: require.resolve(`../${this.props.sample}`)
-    });
-    this.composeWith('fountain-gulp', {options}, {
-      local: require.resolve('generator-fountain-gulp/generators/app')
-    });
+    this.composeWith(require.resolve(`../${this.props.sample}`), options);
+    this.composeWith(require.resolve('generator-fountain-gulp/generators/app'), options);
   },
 
   writing() {
