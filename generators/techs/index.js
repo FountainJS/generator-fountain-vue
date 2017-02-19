@@ -4,7 +4,7 @@ module.exports = fountain.Base.extend({
   configuring() {
     this.mergeJson('package.json', {
       dependencies: {
-        'vue-resource': '^0.9.3'
+        'vue-resource': '^1.2.0'
       }
     });
   },
