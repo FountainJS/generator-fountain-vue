@@ -25,8 +25,9 @@ export default {
   created() {
     return this.$http
       .get('app/techs/techs.json')
+      .then(response => response.json())
       .then(response => {
-        this.techs = response.json();
+        this.techs = response;
       });
   },
   components: {
