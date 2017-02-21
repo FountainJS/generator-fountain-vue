@@ -22,23 +22,23 @@
     "vue"
   ],
   "dependencies": {
-    "fountain-generator": "^1.0.0-rc1",
-    "generator-fountain-gulp": "^1.0.0-rc1"
+    "fountain-generator": "^1.0.0-rc2",
+    "generator-fountain-gulp": "^1.0.0-rc2"
   },
   "devDependencies": {
-    "ava": "^0.16.0",
-    "babel-eslint": "^6.0.2",
-    "chai": "^3.4.1",
+    "ava": "^0.18.2",
+    "babel-eslint": "^7.1.1",
+    "chai": "^3.5.0",
     "chai-spies": "^0.7.1",
-    "cross-spawn": "^4.0.0",
-    "eslint": "^3.2.2",
-    "eslint-config-xo-space": "^0.12.0",
-    "eslint-plugin-babel": "^3.2.0",
+    "cross-spawn": "^5.0.1",
+    "eslint": "^3.15.0",
+    "eslint-config-xo-space": "^0.15.0",
+    "eslint-plugin-babel": "^4.0.1",
     "gulp": "gulpjs/gulp#4.0",
-    "gulp-eslint": "^2.0.0",
-    "gulp-exclude-gitignore": "^1.0.0",
-    "gulp-nsp": "^2.4.0",
-    "nyc": "^6.6.1"
+    "gulp-eslint": "^3.0.1",
+    "gulp-exclude-gitignore": "^1.1.1",
+    "gulp-nsp": "^2.4.2",
+    "nyc": "^10.1.2"
   },
   "nyc": {
     "include": [
@@ -54,6 +54,10 @@
   },
   "license": "MIT",
   "eslintConfig": {
-    "extends": "xo-space/esnext"
+    "extends": "xo-space/esnext",
+    "rules": {
+      "func-names": ["error", "as-needed"],
+      "quote-props": ["error", "consistent"]
+    }
   }
 }

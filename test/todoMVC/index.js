@@ -1,3 +1,4 @@
+const path = require('path');
 const test = require('ava');
 const chai = require('chai');
 const expect = chai.expect;
@@ -33,13 +34,13 @@ const files = [
 test.before(() => {
   context = TestUtils.mock('todoMVC');
   require('../../generators/todoMVC/index');
-  process.chdir('../../');
+  process.chdir(path.resolve(__dirname, '../../'));
 });
 
 test(`Add 'todomvc-app-css' to package.json dependencies`, () => {
   TestUtils.call(context, 'configuring.pkg');
-  expect(context.mergeJson['package.json'].dependencies.vuex).to.equal('^2.0.0');
-  expect(context.mergeJson['package.json'].dependencies['todomvc-app-css']).to.equal('^2.0.4');
+  expect(context.mergeJson['package.json'].dependencies.vuex).to.equal('^2.1.2');
+  expect(context.mergeJson['package.json'].dependencies['todomvc-app-css']).to.equal('^2.0.6');
 });
 
 test(`Add 'transform-object-rest-spread' to babelrc`, () => {

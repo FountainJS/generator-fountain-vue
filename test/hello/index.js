@@ -1,3 +1,4 @@
+const path = require('path');
 const test = require('ava');
 const chai = require('chai');
 const expect = chai.expect;
@@ -17,7 +18,7 @@ const files = [
 test.before(() => {
   context = TestUtils.mock('hello');
   require('../../generators/hello/index');
-  process.chdir('../../');
+  process.chdir(path.resolve(__dirname, '../../'));
 });
 
 test(`Call this.copyTemplate 20 times`, t => {
