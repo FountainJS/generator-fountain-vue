@@ -4,7 +4,7 @@
       Cooked with all these awesome technologies:
     </h2>
     <div class="techs">
-      <tech v-for="tech in techs" :tech="tech"></tech>
+      <tech v-for="tech in techs" :tech="tech" :key="tech.key"></tech>
     </div>
   </div>
 </template>
